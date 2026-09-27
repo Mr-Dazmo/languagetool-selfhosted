@@ -21,3 +21,14 @@ Configure the LanguageTool browser extension to use **Other server** and enter:
 ```text
 http://TRUENAS-IP:8081/v2
 ```
+
+## License
+
+The Dockerfile and original configuration files in this repository are licensed
+under the MIT License. See [LICENSE](LICENSE).
+
+LanguageTool is a separate project and is licensed under the GNU Lesser General
+Public License (LGPL), version 2.1 or later. LanguageTool retains its original
+copyright and licensing terms.
+
+This project is not affiliated with or endorsed by the LanguageTool project.
