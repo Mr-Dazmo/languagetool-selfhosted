@@ -25,6 +25,10 @@ COPY --from=builder \
     /build/languagetool-server/target/languagetool-server-*.jar \
     /opt/languagetool/languagetool-server.jar
 
+COPY --from=builder \
+    /build/COPYING.txt \
+    /opt/languagetool/COPYING.txt
+
 EXPOSE 8081
 
 ENTRYPOINT ["java", "-jar", "/opt/languagetool/languagetool-server.jar"]
