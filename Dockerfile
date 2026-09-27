@@ -19,6 +19,8 @@ RUN mvn -pl languagetool-server -am \
 # Runtime image
 FROM docker.io/library/eclipse-temurin:21-jre
 
+LABEL org.opencontainers.image.source="https://github.com/Mr-Dazmo/languagetool-selfhosted"
+
 WORKDIR /opt/languagetool
 
 COPY --from=builder \
